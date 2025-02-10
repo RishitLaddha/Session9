@@ -83,7 +83,6 @@ Let's go for example : `PolygonSequence(25, 10)`.
 - **25** → This is the maximum number of sides a polygon in the sequence can have. The sequence starts from **3-sided (triangle)** and goes up to **25-sided (icosikaipentagon)**.  
 - **10** → This is the **circumradius**, meaning every polygon in the sequence is inscribed in a circle of radius **10 units**.
 
----
 
 ### **2. What Happens Internally?**  
 When we create `PolygonSequence(25, 10)`, the following polygons are generated:  
@@ -96,7 +95,7 @@ When we create `PolygonSequence(25, 10)`, the following polygons are generated:
 
 Each of these polygons shares the same circumradius but has different **side lengths, areas, and perimeters**.
 
----
+
 
 ### **3. Accessing Elements (`__getitem__`)**  
 Since `PolygonSequence` supports **indexing**, we can access individual polygons like:
@@ -106,7 +105,6 @@ seq[1]  # Returns the square (4-sided polygon with circumradius 10)
 seq[-1] # Returns the 25-sided polygon (circumradius 10)
 ```
 
----
 
 ### **4. Finding the Most Efficient Polygon (`max_efficiency_polygon`)**  
 - Efficiency is measured by **area-to-perimeter ratio**.
@@ -121,7 +119,7 @@ print(best_polygon)
 
 This will return the **polygon with the highest area-to-perimeter ratio** in the sequence.
 
----
+
 
 ### **5. Representation (`__repr__`)**  
 When we print the object:
@@ -138,7 +136,7 @@ PolygonSequence(max_edges=25, circumradius=10)
 
 This makes it easy to understand the **range of polygons** stored in the sequence.
 
----
+
 
 ### **Final Summary**  
 For `PolygonSequence(25, 10)`, we have a **list of polygons** from **triangle (3 sides) to 25-sided polygon**, all with **circumradius 10**. The **polygon with the highest efficiency** is likely the one with the most sides, and we can access individual polygons using **indexing**.
