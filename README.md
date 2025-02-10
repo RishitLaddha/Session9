@@ -146,7 +146,7 @@ For `PolygonSequence(25, 10)`, we have a **list of polygons** from **triangle (3
 
 The `PolygonSequence` class allows easy manipulation and exploration of polygons with varying numbers of edges. Its functionality includes finding the polygon with the highest efficiency, providing both flexibility and insight into geometric properties.
 
-#### **Testing the Implementation (`polygon_tests_notebook.py`)**
+## **Testing the Implementation (`polygon_tests_notebook.py`)**
 The `polygon_tests_notebook.py` script contains unit tests for verifying the correctness of the `Polygon` and `PolygonSequence` classes.
 
 - **`test_polygon()`**  
